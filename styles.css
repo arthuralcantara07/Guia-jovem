@@ -424,3 +424,38 @@ footer{ margin-top:60px; font-size:0.8rem; color:#8b948f; text-align:center; }
 .p-enem .badge{
   background:var(--light-select); color:var(--ink);
 }
+
+/* ---------- Quadro comparativo lado a lado (usado no FIES,
+   pra comparar as duas modalidades) ---------- */
+.page .compare-grid{
+  display:grid; grid-template-columns:1fr; gap:14px; margin:0 0 16px;
+}
+@media (min-width:640px){
+  .page .compare-grid{ grid-template-columns:1fr 1fr; }
+}
+.page .compare-card{
+  border:1px solid rgba(134,180,152,0.5); border-radius:12px; padding:16px 18px;
+}
+.page .compare-card .num{
+  display:block; font-family:'Fredoka', sans-serif; font-weight:700;
+  color:var(--teal-dark); font-size:1.05rem; margin-bottom:8px;
+}
+.page .compare-card ul{ margin:0; padding-left:20px; }
+.page .compare-card ul li{ font-size:0.96rem; line-height:1.55; margin-bottom:6px; }
+.page .compare-card ul li:last-child{ margin-bottom:0; }
+
+/* ---------- Passo a passo com rótulo em negrito (usado no FIES) ---------- */
+.page .step{ margin-bottom:14px; }
+.page .step:last-child{ margin-bottom:0; }
+.page .step .step-label{
+  font-family:'Fredoka', sans-serif; font-weight:600; color:var(--ink);
+  margin-right:4px;
+}
+
+/* ---------- Ajuste específico só da página do FIES: o botão de
+   link externo aqui é verde (sage), diferente do padrão bege (tan)
+   usado nas outras páginas de conteúdo ---------- */
+.p-fies .ext-link{
+  background:var(--sage);
+  box-shadow: 0 5px 0 var(--sage-dark);
+}
