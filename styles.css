@@ -459,3 +459,26 @@ footer{ margin-top:60px; font-size:0.8rem; color:#8b948f; text-align:center; }
   background:var(--sage);
   box-shadow: 0 5px 0 var(--sage-dark);
 }
+
+/* ---------- Cartões de plataforma (usado em plataformas-cursos.html
+   e reaproveitável em plataformas-emprego.html) ---------- */
+.page .platform-list{
+  display:flex; flex-direction:column; gap:16px; margin-top:4px;
+}
+.page .platform-card{
+  display:flex; align-items:center; justify-content:space-between; gap:16px;
+  flex-wrap:wrap;
+  background:rgba(134,180,152,0.12);
+  border:1px solid rgba(134,180,152,0.4);
+  border-radius:14px;
+  padding:18px 22px;
+}
+.page .platform-card .info{ flex:1 1 220px; }
+.page .platform-card .info strong{
+  display:block; font-family:'Fredoka', sans-serif; font-weight:600;
+  font-size:1.08rem; color:var(--ink); margin-bottom:4px;
+}
+.page .platform-card .info span{ font-size:0.95rem; color:#4f5a56; }
+
+/* dentro de um platform-card o botão não deve esticar — só aqui */
+.page .platform-card .ext-link{ flex:0 0 auto; }
