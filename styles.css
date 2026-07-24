@@ -482,3 +482,15 @@ footer{ margin-top:60px; font-size:0.8rem; color:#8b948f; text-align:center; }
 
 /* dentro de um platform-card o botão não deve esticar — só aqui */
 .page .platform-card .ext-link{ flex:0 0 auto; }
+
+/* ---------- Caixa de citação destacada (usado no Primeiro Emprego,
+   pro exemplo de objetivo no currículo) ---------- */
+.page .quote-box{
+  margin:0 0 16px; padding:16px 20px;
+  background:rgba(0,151,178,0.08);
+  border-left:3px solid var(--teal);
+  border-radius:8px;
+  font-style:italic;
+  font-size:1.02rem;
+  line-height:1.6;
+}
